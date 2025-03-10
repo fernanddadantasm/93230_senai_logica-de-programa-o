@@ -22,8 +22,7 @@ Total a pagar: R$ {valor_final:.2f}
 """)
 
     case 2:
-        num_parcelas = int(input("""
-1x
+        numero_parcelas = int(input("""
 2x
 3x
 4x
@@ -31,11 +30,11 @@ Total a pagar: R$ {valor_final:.2f}
 6x
 Digite o número de parcelas: 
 """))
-        valor_parcela = valor_produto / num_parcelas
+        valor_parcela = valor_produto / numero_parcelas
         print(f"""
 Valor do produto: R$ {valor_produto:.2f}
 Forma de pagamento: A prazo
-Quantidade de parcelas: {num_parcelas}
+Quantidade de parcelas: {numero_parcelas}
 Valor por parcela: R$ {valor_parcela:.2f}
 Total a prazo: R$ {valor_produto:.2f}
 """)
