@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 # EXERCICIOS ALGEBRA BOOLEANA 
 # AND = LOGIN E SENHA
 # OR = TAXI E UBER 
