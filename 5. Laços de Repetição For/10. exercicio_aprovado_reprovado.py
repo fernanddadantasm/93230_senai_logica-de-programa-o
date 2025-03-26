@@ -10,6 +10,8 @@ media = 0
 for i in range(3): 
     nota = float(input(f"Digite a {i+1}ª nota: "))
     media += nota
+if nota < 0 or nota > 10:
+    print("Nota inválida. ")
 if media / 3 >= 7:
     print(f"APROVADO, PARABÉNS!")
 elif media / 3 >= 4:
