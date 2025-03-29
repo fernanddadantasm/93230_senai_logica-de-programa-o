@@ -1,23 +1,31 @@
-import os 
-os.system("clear")
-
-#LIMPAR O TERMINAL.
 import os
 os.system("clear")
 
-media = 0 
 
-for i in range(3): 
-    nota = float(input(f"Digite a {i+1}ª nota: "))
-    media += nota
-if nota < 0 or nota > 10:
-    print("Nota inválida. ")
-if media / 3 >= 7:
-    print(f"APROVADO, PARABÉNS!")
-elif media / 3 >= 4:
-    print("RECUPERAÇÃO")
-elif media / 3 < 4:
-    print("REPROVADO!")
+QUANTIDADE_NOTAS = (3)
+soma = 0
+
+for i in range(QUANTIDADE_NOTAS):
+    while True:
+        nota = float(input("Informe sua nota: "))
+        if nota < 0 or nota > 10:
+            print('Nota inválida. \nTente Novamente.')
+        else:
+            soma += nota
+            break
+
+media = soma / QUANTIDADE_NOTAS
+
+if nota >= 7:
+    total = "Aprovado. Parabéns!"
+elif nota >= 5:
+    
+    total = "Recuperação."
+else:
+    total = "Reprovado."
+
+print(f"\nSua média é: {media}")
+print(f"Seu status é: {total}")
 
 
 

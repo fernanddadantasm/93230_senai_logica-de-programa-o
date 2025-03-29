@@ -1,3 +1,10 @@
+#Faça um algoritmo que leia uma quantidade não determinada de números inteiros positivos.Calcule: 
+#a - quantidade de números pares e ímpares; 
+#b - média de valores pares 
+#c- média geral dos números lidos. 
+#O número que encerrará a leitura será o número zero.
+
+
 import os
 os.system("clear")
 
