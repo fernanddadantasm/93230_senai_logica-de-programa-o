@@ -17,6 +17,7 @@
 
 import os 
 os.system("clear")
+import time
 idade = 0
 quantidade_mulheres = 0 
 soma_salarios = 0
@@ -62,12 +63,17 @@ Digite seu gênero:
                 print(f"Maior idade do grupo: {maior_idade}")
                 print(f"Menor idade do grupo: {menor_idade}")
                 print(f"Quantidade de mulheres com salário a partir de R$ 5.000,00: {quantidade_mulheres}")
-            else:
-                print("\nCadastre uma pessoa primeiro.")  
-                os.system("clear")
+            elif total_pessoas == 0:
+                print("\nCadastre uma pessoa primeiro.")
+            time.sleep(3)  
+            os.system("clear")
         case 3:
             print("Encerrando o programa")
             break          
+        case _:
+            print("\nOpção inválida")
+            time.sleep(3)
+            os.system("clear")
 
 
           
