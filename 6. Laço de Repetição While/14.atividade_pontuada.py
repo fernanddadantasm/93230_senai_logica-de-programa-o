@@ -62,24 +62,29 @@ Digite a opção desejada: """))
      if continuar == "n":
          break
 while True:
-         forma_de_pagamento = input('\nInforme a forma de pagamennto. \n1 - Á vista (10% de desconto). \n2 - Cartão de credito (10% de acréscimo). \nInfome a opção escolhida: ')
- 
-         if forma_de_pagamento == "1":
+        print("\nForma de pagamento: ")
+        print("1 - Á vista (10% de desconto)")
+        print("2 - Cartão de crédito (10% de acréscimo)")
+        forma_de_pagamento = input("Escolha a forma de pagamento (1/2): ")
+    
+        if forma_de_pagamento == "1": 
+             opcao_pagamento = "Á vista"
              desconto_ou_acrescimo = subtotal * 0.10
              soma -= desconto_ou_acrescimo
              print("Desconto de 10% aplicado.")
              break
-         elif forma_de_pagamento == "2":
+        elif forma_de_pagamento == "2":
+             opcao_pagamento = "Cartão de crédito"
              desconto_ou_acrescimo = subtotal * 0.10
              soma += desconto_ou_acrescimo
              print("Acréscimo de 10% aplicado.")
              break
-         else:
+        else:
              print("Opção inválida, tente novamente.")
 
 print(f"\nDetalhes do pedido\n")
-print(f"Pratos escolhidos: {pratos_escolhidos}\n")
+print(f"Pratos escolhidos: {', '.join(pratos_escolhidos)}\n")
 print(f"Subtotal: R$ {subtotal:.2f}\n")
-print(f"Forma de pagamento: {forma_de_pagamento}\n")
+print(f"Forma de pagamento: {opcao_pagamento}\n")
 print(f"Desconto/Acréscimo: R$ {desconto_ou_acrescimo:.2f}\n")
 print(f"Total: R$ {soma:.2f}")             
