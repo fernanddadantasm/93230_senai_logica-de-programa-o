@@ -39,7 +39,7 @@ logo_senai()
 print(f"Soma: {soma}")
 print(f"\nSubtração: {subtracao}")
 print(f"\nMultiplicção: {multiplicacao}")
-print(f"\nDivisão: {divisao}")
+print(f"\nDivisão: {divisao:.2f}")
 
 
 
