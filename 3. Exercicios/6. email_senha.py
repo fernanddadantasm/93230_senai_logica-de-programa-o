@@ -1,5 +1,6 @@
 import os
 os.system("clear")
+#.
 
 #Elabore um algortimo
 
