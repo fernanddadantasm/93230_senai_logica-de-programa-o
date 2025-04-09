@@ -1,5 +1,6 @@
 import os 
 os.system("clear")
+#fer
 
 login_cadastrado = "fernanda.dantas@hotmail.com"
 senha_cadastrada = "123456"
