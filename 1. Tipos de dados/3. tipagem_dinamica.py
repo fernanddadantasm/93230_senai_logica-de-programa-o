@@ -1,5 +1,6 @@
 import os 
 os.system("clear")
+#.
 
 # Definição de tipos automática.
 
