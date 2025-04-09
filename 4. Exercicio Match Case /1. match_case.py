@@ -2,6 +2,7 @@ import os
 from unittest import case
 os.system("clear")
 
+#.
 
 dia = input("Digite dia da semana: ")
 
