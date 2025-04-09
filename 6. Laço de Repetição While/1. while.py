@@ -1,6 +1,6 @@
 import os 
 os.system("clear")
-
+#.
 contador = 0 
 continua = 's'
 
