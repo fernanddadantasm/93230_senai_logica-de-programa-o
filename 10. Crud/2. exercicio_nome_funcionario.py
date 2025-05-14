@@ -33,13 +33,14 @@ def adicionar_dados_lista(dados_funcionarios):
 
 def mostrar_dados(dados_funcionarios):
     if verificar_lista_vazia(dados_funcionarios):
-        input("\nPressione Enter para voltar ao menu")  
-        return  
+        input("\nPressione Enter para voltar ao menu")  # Adicionado aqui!
+        return
     os.system("clear")
     print("\n - Lista de Funcionários - ")
     for funcionario in dados_funcionarios:
         funcionario.exibir_dados()
         print("-" * 30)
+    input("\nPressione Enter para voltar ao menu")
 
 def atualizar_dados(dados_funcionarios):
     os.system("clear")
