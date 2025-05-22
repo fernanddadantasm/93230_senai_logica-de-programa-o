@@ -1,0 +1,8 @@
+// Constantes
+
+const idade = 30;
+
+
+//Exibindo resultado
+console.log('Idade:', idade)
+console.log(`Idade:- ${idade}`)
