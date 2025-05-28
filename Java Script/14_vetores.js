@@ -18,5 +18,6 @@ frutas.shift() // Removendo o primeiro elemento do vetor
 console.log(frutas)
 
 frutas.forEach((fruta, index) => {
-    console.log(`${index}: ${fruta}`) // Exibindo o índice e o valor de cada elemento do vetor
+    console.log(`${++index}: ${fruta}`) // Exibindo o índice e o valor de cada elemento do vetor
 })
+
