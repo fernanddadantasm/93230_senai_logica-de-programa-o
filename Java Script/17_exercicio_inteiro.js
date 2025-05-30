@@ -6,14 +6,14 @@
 
 const readline = require('readline-sync')
 
-let f = readline.questionInt('Digite o valor de A: ')
-let g = readline.questionInt('Digite o valor de B: ')
+let a = readline.questionInt('Digite o valor de A: ')
+let b = readline.questionInt('Digite o valor de B: ')
 let c = 0
 
-if (f == g) {
-    c = f + g
+if (a == b) {
+    c = a + b
 } else {
-    c = f * g
+    c = a * b
 }
 
 console.log(`Resultado: ${c}`)
